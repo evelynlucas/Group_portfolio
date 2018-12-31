@@ -105,27 +105,5 @@ public class ChoosePerson extends AppCompatActivity {
         Intent intent = new Intent(this, EvelynActivity.class);
         startActivity(intent);
     }
-
-    private void enableViews(boolean enable) {
-        if (enable) {
-            drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
-            drawerToggle.setDrawerIndicatorEnabled(false);
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            if (!mToolBarNavigationListenerIsRegistered) {
-                drawerToggle.setToolbarNavigationClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        onBackPressed();
-                    }
-                });
-                mToolBarNavigationListenerIsRegistered = true;
-            }
-        } else {
-            drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
-            getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-            drawerToggle.setDrawerIndicatorEnabled(true);
-            drawerToggle.setToolbarNavigationClickListener(null);
-            mToolBarNavigationListenerIsRegistered = false;
-        }
-    }
+    
 }
