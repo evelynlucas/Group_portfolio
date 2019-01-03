@@ -74,7 +74,7 @@
     <string name="nav_header_teamName">The Triple Threat</string>
     <string name="welcome_screen">WELCOME SCREEN</string>
     <string name="mini_group_photo_description">Mini group photo</string>
-
+    <string name="toggle_textview_text">Click the button to receive notifications to check Evelyn\'s page at a later time!</string>
 
 
 </resources>

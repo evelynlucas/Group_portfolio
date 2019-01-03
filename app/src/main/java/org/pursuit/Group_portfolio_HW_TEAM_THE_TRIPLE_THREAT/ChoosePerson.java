@@ -105,5 +105,5 @@ public class ChoosePerson extends AppCompatActivity {
         Intent intent = new Intent(this, EvelynActivity.class);
         startActivity(intent);
     }
-    
+
 }

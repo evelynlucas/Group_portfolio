@@ -36,9 +36,14 @@
             android:configChanges="keyboardHidden|orientation"
             android:parentActivityName=".ChoosePerson"
             android:screenOrientation="portrait" />
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="false"></receiver>
         <activity android:name=".ChoosePerson"
             android:screenOrientation="portrait"
             ></activity>
+
     </application>
 
 </manifest>
