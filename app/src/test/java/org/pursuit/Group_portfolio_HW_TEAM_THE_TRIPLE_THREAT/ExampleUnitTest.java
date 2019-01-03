@@ -10,8 +10,30 @@ import static org.junit.Assert.*;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 public class ExampleUnitTest {
+
     @Test
-    public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+    public void evelynActivityExists() {
+        assertNotNull(EvelynActivity.class);
     }
+
+    @Test
+    public void johnActivityExists() {
+        assertNotNull(JohnActivity.class);
+    }
+
+    @Test
+    public void veenActivityExists() {
+        assertNotNull(VeenActivity.class);
+    }
+
+    @Test
+    public void noRepeatActivities() {
+        assertNotEquals(VeenActivity.class, JohnActivity.class);
+    }
+
+    @Test
+    public void splashScreenExists() {
+        assertNotNull(SplashScreen.class);
+    }
+
 }
